@@ -2995,14 +2995,13 @@
 			#size-cells = <0x00>;
 			bus-width = <0x04>;
 			cap-sd-highspeed;
-			sd-uhs-sdr50;
-			max-frequency = <0x5f5e100>;
+			max-frequency = <0x17d7840>;
 			non-removable;
 			disable-wp;
 			keep-power-in-suspend;
 			mmc-pwrseq = <0x32>;
 			vmmc-supply = <0x2f>;
-			vqmmc-supply = <0x21>;
+			vqmmc-supply = <0x2f>;
 			phandle = <0x132>;
 
 			wifi@1 {
@@ -3532,9 +3531,10 @@
 
 	sdio-pwrseq {
 		compatible = "mmc-pwrseq-simple";
-		reset-gpios = <0x2d 0x47 0x01>;
+		reset-gpios = <0x2d 0x48 0x01>;
 		clocks = <0x2e>;
 		clock-names = "ext_clock";
+		post-power-on-delay-ms = <0xc8>;
 		phandle = <0x32>;
 	};
 
