@@ -253,7 +253,8 @@
 				clocks = <0x02 0x24>;
 				clock-names = "pclk";
 				resets = <0x05 0x3d>;
-				status = "disabled";
+				AVDD-supply = <0x21>;
+				status = "okay";
 				phandle = <0x70>;
 			};
 
@@ -2190,7 +2191,7 @@
 					#sound-dai-cells = <0x01>;
 					sound-name-prefix = "TOACODEC";
 					resets = <0x12 0x17>;
-					status = "disabled";
+					status = "okay";
 					phandle = <0xf3>;
 				};
 
@@ -3549,8 +3550,9 @@
 	sound {
 		compatible = "amlogic,axg-sound-card";
 		model = "SEI510";
-		audio-aux-devs = <0x54 0x55 0x56 0x57>;
-		audio-routing = "TDMOUT_A IN 0", "FRDDR_A OUT 0", "TDMOUT_A IN 1", "FRDDR_B OUT 0", "TDMOUT_A IN 2", "FRDDR_C OUT 0", "TDM_A Playback", "TDMOUT_A OUT", "TDMOUT_B IN 0", "FRDDR_A OUT 1", "TDMOUT_B IN 1", "FRDDR_B OUT 1", "TDMOUT_B IN 2", "FRDDR_C OUT 1", "TDM_B Playback", "TDMOUT_B OUT", "TODDR_A IN 4", "PDM Capture", "TODDR_B IN 4", "PDM Capture", "TODDR_C IN 4", "PDM Capture", "TDMIN_A IN 0", "TDM_A Capture", "TDMIN_A IN 3", "TDM_A Loopback", "TDMIN_B IN 0", "TDM_A Capture", "TDMIN_B IN 3", "TDM_A Loopback", "TDMIN_A IN 1", "TDM_B Capture", "TDMIN_A IN 4", "TDM_B Loopback", "TDMIN_B IN 1", "TDM_B Capture", "TDMIN_B IN 4", "TDM_B Loopback", "TODDR_A IN 0", "TDMIN_A OUT", "TODDR_B IN 0", "TDMIN_A OUT", "TODDR_C IN 0", "TDMIN_A OUT", "TODDR_A IN 1", "TDMIN_B OUT", "TODDR_B IN 1", "TDMIN_B OUT", "TODDR_C IN 1", "TDMIN_B OUT";
+		audio-aux-devs = <0x54 0x55 0x56 0x57 0x200>;
+		audio-widgets = "Line", "Lineout";
+		audio-routing = "TDMOUT_A IN 0", "FRDDR_A OUT 0", "TDMOUT_A IN 1", "FRDDR_B OUT 0", "TDMOUT_A IN 2", "FRDDR_C OUT 0", "TDM_A Playback", "TDMOUT_A OUT", "TDMOUT_B IN 0", "FRDDR_A OUT 1", "TDMOUT_B IN 1", "FRDDR_B OUT 1", "TDMOUT_B IN 2", "FRDDR_C OUT 1", "TDM_B Playback", "TDMOUT_B OUT", "TODDR_A IN 4", "PDM Capture", "TODDR_B IN 4", "PDM Capture", "TODDR_C IN 4", "PDM Capture", "TDMIN_A IN 0", "TDM_A Capture", "TDMIN_A IN 3", "TDM_A Loopback", "TDMIN_B IN 0", "TDM_A Capture", "TDMIN_B IN 3", "TDM_A Loopback", "TDMIN_A IN 1", "TDM_B Capture", "TDMIN_A IN 4", "TDM_B Loopback", "TDMIN_B IN 1", "TDM_B Capture", "TDMIN_B IN 4", "TDM_B Loopback", "TODDR_A IN 0", "TDMIN_A OUT", "TODDR_B IN 0", "TDMIN_A OUT", "TODDR_C IN 0", "TDMIN_A OUT", "TODDR_A IN 1", "TDMIN_B OUT", "TODDR_B IN 1", "TDMIN_B OUT", "TODDR_C IN 1", "TDMIN_B OUT", "AVMUTE INL", "ACODEC LOLP", "AVMUTE INR", "ACODEC LORP", "Lineout", "AVMUTE OUTL", "Lineout", "AVMUTE OUTR";
 		clocks = <0x02 0x0d 0x02 0x0b 0x02 0x0c>;
 		assigned-clocks = <0x02 0x0d 0x02 0x0b 0x02 0x0c>;
 		assigned-clock-parents = <0x00 0x00 0x00>;
@@ -3604,8 +3606,12 @@
 			dai-tdm-slot-tx-mask-3 = <0x01 0x01>;
 			mclk-fs = <0x100>;
 
-			codec {
+			codec-0 {
 				sound-dai = <0x60 0x01>;
+			};
+
+			codec-1 {
+				sound-dai = <0xf3 0x01>;
 			};
 		};
 
@@ -3624,6 +3630,22 @@
 				sound-dai = <0x1c>;
 			};
 		};
+
+		dai-link-10 {
+			sound-dai = <0xf3 0x03>;
+
+			codec {
+				sound-dai = <0x70>;
+			};
+		};
+	};
+
+	av-mute-amp {
+		compatible = "simple-audio-amplifier";
+		sound-name-prefix = "AVMUTE";
+		enable-gpios = <0xf5 0x02 0x00>;
+		status = "okay";
+		phandle = <0x200>;
 	};
 
 	leds {
