@@ -1,0 +1,14 @@
+extraargs=earlycon rootflags=data=writeback rw no_console_suspend consoleblank=0 fsck.fix=yes fsck.repair=yes net.ifnames=0
+bootlogo=false
+verbosity=7
+console=both
+# DTB file for this tvbox
+fdtfile=amlogic/meson-g12a-btv-e10.dts
+# set this to the UUID of the root partition (value can be found 
+# in /extlinux/extlinux.conf after APPEND root= or with blkid)
+rootdev=UUID=baa5907c-d9ad-4451-8998-2de045553899
+# Enable ONLY for gxbb (S905) / gxl (S905X/L/W) to create fake u-boot header
+#soc_fixup=gxl-
+APPEND root=LABEL=ROOT_EMMC rootflags=data=writeback rw console=ttyAML0,115200n8 
+console=tty0 no_console_suspend consoleblank=0 fsck.fix=yes fsck.repair=yes net.ifnames=0
+usbstoragequirks=0x2537:0x1066:u,0x2537:0x1068:u
