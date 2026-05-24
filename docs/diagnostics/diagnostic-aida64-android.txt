@@ -1,0 +1,624 @@
+AIDA64 for Android v2.19 Report
+
+<<< Sistema >>>
+
+Fabricante: AB
+Modelo: E10
+Marca: BTV
+Placa: franklin
+Dispositivo: BTVE
+Hardware: amlogic
+Plataforma: franklin
+Produto: franklin
+RAM: 2 GB
+Memória Total: 2008 MB
+Memória disponível: 879 MB
+Armazenamento Interno - Espaço Total: 3158 MB
+Armazenamento Interno - Espaço Livre: 1968 MB
+Armazenamento Externo - Espaço Total: 29,64 GB
+Armazenamento Externo - Espaço Livre: 28,25 GB
+Características do Dispositivo: android.hardware.audio.output
+android.hardware.camera
+android.hardware.camera.any
+android.hardware.camera.autofocus
+android.hardware.camera.external
+android.hardware.camera.front
+android.hardware.consumerir
+android.hardware.ethernet
+android.hardware.faketouch
+android.hardware.hdmi.cec
+android.hardware.location
+android.hardware.location.gps
+android.hardware.location.network
+android.hardware.microphone
+android.hardware.opengles.aep
+android.hardware.ram.low
+android.hardware.screen.landscape
+android.hardware.screen.portrait
+android.hardware.telephony
+android.hardware.usb.accessory
+android.hardware.usb.host
+android.hardware.wifi
+android.hardware.wifi.direct
+android.software.adoptable_storage
+android.software.app_widgets
+android.software.backup
+android.software.device_admin
+android.software.live_wallpaper
+android.software.print
+android.software.webview
+
+<<< Processador >>>
+
+Arquitetura do Núcleo: 4x ARM Cortex-A53 @ 1800 MHz
+Conjunto de Instruçoes: 64-bit ARMv8-A (Modo 32-bit)
+Revisao: r0p4
+Núcleos: 4
+Faixa de Velocidade da CPU: 100 - 1800 MHz
+Velocidade do Núcleo 1: 1800 MHz
+Velocidade do Núcleo 2: 1800 MHz
+Velocidade do Núcleo 3: 1800 MHz
+Velocidade do Núcleo 4: 1800 MHz
+Utilizaçao da CPU: 31 %
+Gerenciador: interactive
+ABIs Suportadas: armeabi-v7a, armeabi
+ABIs de 32-bits Suportadas: armeabi-v7a, armeabi
+AES: Suportado
+ASIMD/NEON: Suportado
+PMULL: Suportado
+SHA1: Suportado
+SHA2: Suportado
+
+<<< Tela >>>
+
+Resoluçao: 3840 × 2160
+Tamanho: 966 mm × 543 mm
+Diagonal: 43,62 inches
+Densidade: 101 dpi (hdpi)
+xdpi / ydpi: 101 / 101 dpi
+GPU Fornecedor: ARM
+GPU Renderizador: Mali-G31
+GPU Cores: 1
+Taxa de atualizaçao: 60 Hz
+Orientaçao Padrao: Paisagem
+Versao do OpenGL ES: 3.2
+Versao da GPU: OpenGL ES 3.2 v1.r16p0-01rel0.bcc0cdabec638d4bf85475d4a5ae47a7
+Extensoes OpenGL ES: GL_EXT_debug_marker
+GL_ARM_rgba8
+GL_ARM_mali_shader_binary
+GL_OES_depth24
+GL_OES_depth_texture
+GL_OES_depth_texture_cube_map
+GL_OES_packed_depth_stencil
+GL_OES_rgb8_rgba8
+GL_EXT_read_format_bgra
+GL_OES_compressed_paletted_texture
+GL_OES_compressed_ETC1_RGB8_texture
+GL_OES_standard_derivatives
+GL_OES_EGL_image
+GL_OES_EGL_image_external
+GL_OES_EGL_image_external_essl3
+GL_OES_EGL_sync
+GL_OES_texture_npot
+GL_OES_vertex_half_float
+GL_OES_required_internalformat
+GL_OES_vertex_array_object
+GL_OES_mapbuffer
+GL_EXT_texture_format_BGRA8888
+GL_EXT_texture_rg
+GL_EXT_texture_type_2_10_10_10_REV
+GL_OES_fbo_render_mipmap
+GL_OES_element_index_uint
+GL_EXT_shadow_samplers
+GL_OES_texture_compression_astc
+GL_KHR_texture_compression_astc_ldr
+GL_KHR_texture_compression_astc_hdr
+GL_KHR_texture_compression_astc_sliced_3d
+GL_EXT_texture_compression_astc_decode_mode
+GL_EXT_texture_compression_astc_decode_mode_rgb9e5
+GL_KHR_debug
+GL_EXT_occlusion_query_boolean
+GL_EXT_disjoint_timer_query
+GL_EXT_blend_minmax
+GL_EXT_discard_framebuffer
+GL_OES_get_program_binary
+GL_OES_texture_3D
+GL_EXT_texture_storage
+GL_EXT_multisampled_render_to_texture
+GL_EXT_multisampled_render_to_texture2
+GL_OES_surfaceless_context
+GL_OES_texture_stencil8
+GL_EXT_shader_pixel_local_storage
+GL_ARM_shader_framebuffer_fetch
+GL_ARM_shader_framebuffer_fetch_depth_stencil
+GL_ARM_mali_program_binary
+GL_EXT_sRGB
+GL_EXT_sRGB_write_control
+GL_EXT_texture_sRGB_decode
+GL_EXT_texture_sRGB_R8
+GL_EXT_texture_sRGB_RG8
+GL_KHR_blend_equation_advanced
+GL_KHR_blend_equation_advanced_coherent
+GL_OES_texture_storage_multisample_2d_array
+GL_OES_shader_image_atomic
+GL_EXT_robustness
+GL_EXT_draw_buffers_indexed
+GL_OES_draw_buffers_indexed
+GL_EXT_texture_border_clamp
+GL_OES_texture_border_clamp
+GL_EXT_texture_cube_map_array
+GL_OES_texture_cube_map_array
+GL_OES_sample_variables
+GL_OES_sample_shading
+GL_OES_shader_multisample_interpolation
+GL_EXT_shader_io_blocks
+GL_OES_shader_io_blocks
+GL_EXT_tessellation_shader
+GL_OES_tessellation_shader
+GL_EXT_primitive_bounding_box
+GL_OES_primitive_bounding_box
+GL_EXT_geometry_shader
+GL_OES_geometry_shader
+GL_ANDROID_extension_pack_es31a
+GL_EXT_gpu_shader5
+GL_OES_gpu_shader5
+GL_EXT_texture_buffer
+GL_OES_texture_buffer
+GL_EXT_copy_image
+GL_OES_copy_image
+GL_EXT_shader_non_constant_global_initializers
+GL_EXT_color_buffer_half_float
+GL_EXT_color_buffer_float
+GL_EXT_YUV_target
+GL_OVR_multiview
+GL_OVR_multiview2
+GL_OVR_multiview_multisampled_render_to_texture
+GL_KHR_robustness
+GL_KHR_robust_buffer_access_behavior
+GL_EXT_draw_elements_base_vertex
+GL_OES_draw_elements_base_vertex
+GL_EXT_protected_textures
+GL_EXT_buffer_storage
+GL_EXT_external_buffer
+
+<<< Rede >>>
+
+<< Telefone >>
+Tipo de Telefone: Nenhum
+
+<< Wi-Fi >>
+Estado: Ativado
+SSID: <unknown ssid>
+BSSID: 02:00:00:00:00:00
+SSID Oculta: Sim
+Endereço IPv4: 192.168.15.11
+Endereço IPv6: fe80::6ab9:d3ff:fe8b:b423
+Intensidade do Sinal: -60 dBm (Muito Bom)
+Velocidade do Link: 72 Mbps
+Frequencia: 2462 MHz
+ID da Rede: 1
+Gateway: 192.168.15.1
+Máscara da Rede: 255.255.255.0
+DNS1: 1.1.1.1
+DNS2: 1.1.1.2
+Tempo de Expiraçao do DHCP: 4 horas
+Banda de 5 GHz: Não suportado
+Wi-Fi Aware: Não suportado
+Wi-Fi Direct: Suportado
+
+<<< Bateria >>>
+
+Fonte de potencia: Porta USB
+Nível: 42 %
+Status: Carregando
+Condição: Boa
+Tecnologia: Li-ion
+Temperatura: 42,4°C
+Voltagem: 0,004 V
+Marcador de Carga: 40 mAh
+Taxa de Carga: 1,10 mA
+
+<<< Android >>>
+
+Versao do Android: 9 (Pie)
+Nível da API: 28
+Nível de Patch de Segurança do Android: 2019-02-05
+Dispositivo ROOTado: Sim
+Identificaçao do Android: ec03b8393c8b09f4
+Build ID: franklin-userdebug 9 PPR1.180610.011 V2.20201130.180211 dev-keys
+Codinome: REL
+Fingerprint: Amlogic/franklin/franklin:9/PPR1.180610.011/V2.20201130.180211:userdebug/dev-keys
+ID: PPR1.180610.011
+Incremento: V2.20201130.180211
+Versao Java Runtime: Android Runtime 0.9
+Versao da Java VM: ART 2.1.0
+Java VM Heap Size: 256 MB
+Arquitetura do Kernel: armv7l
+Versao do Kernel: 4.9.113 (weizhongyi@vstrong5) (gcc version 6.3.1 20170109 (Linaro GCC 6.3-2017.02) ) #14 SMP PREEMPT Mon Nov 30 18:04:22 CST 2020
+Tags: dev-keys
+Tipo: userdebug
+Versão do Serviço Google Play: 25.09.34 (110300-738842635)
+Versão do Serviço Huawei Mobile: < Ausente >
+Versao OpenSSL: OpenSSL 1.1.0 (compatible; BoringSSL)
+Versao ZLib: 1.2.11
+Versao do CLDR do ICU: 32.0.1
+Versao da Biblioteca ICU: 60.2
+Versao do Unicode do ICU: 10.0
+Idioma Android: português (Brasil)
+Fuso Horário Configurado: Horário de Verão do Chile (UTC-03:00)
+Tempo de Atividade: 00:24:42
+
+<<< Dispositivos >>>
+
+<< Dispositivos USB - Linux 4.9.113 xhci-hcd xHCI Host Controller >>
+Fabricante: Linux 4.9.113 xhci-hcd
+Produto: xHCI Host Controller
+Número de série: xhci-hcd.0.auto
+Identificador do dispositivo: 1D6B-0002
+Classe de dispositivo: 09 / 00 (Hi-Speed Hub with single TT)
+Protocolo de dispositivo: 01
+Revisão: 0409
+Versao de USB suportada: 2.00
+Velocidade atual: 480 Mbps
+
+<< Dispositivos USB - Linux 4.9.113 xhci-hcd xHCI Host Controller >>
+Fabricante: Linux 4.9.113 xhci-hcd
+Produto: xHCI Host Controller
+Número de série: xhci-hcd.0.auto
+Identificador do dispositivo: 1D6B-0003
+Classe de dispositivo: 09 / 00 (Hub)
+Protocolo de dispositivo: 03
+Revisão: 0409
+Versao de USB suportada: 3.00
+Velocidade atual: 5000 Mbps
+
+<< Dispositivos USB - USB Gaming Mouse >>
+Produto: USB Gaming Mouse
+Identificador do dispositivo: 04D9-FC30
+Classe de dispositivo: 00 / 00
+Protocolo de dispositivo: 00
+Revisão: 0112
+Versao de USB suportada: 2.00
+Velocidade atual: 12 Mbps
+Potencia máxima: 100 mA
+
+Nenhuma câmera encontrada. A permissão de acesso à câmera precisa ser concedida.
+Nenhum dispositivo OpenCL encontrado.
+Nenhum dispositivo CUDA encontrado.
+Nenhum dispositivo Vulkan encontrado.
+Nenhum dispositivo PCI encontrado.
+
+<<< Temperatura >>>
+
+soc_thermal: 49,4°C
+ddr_thermal: 49,8°C
+Bateria: 42,4°C
+
+<<< Sensores >>>
+
+Nenhum sensor encontrado.
+
+<<< Aplicativos >>>
+
+AIDA64: com.finalwire.aida64(v2.19)
+Brave: com.brave.browser(v1.76.75)
+CPU-Z: com.cpuid.cpu_z(v1.55)
+Device Info HW: ru.andr7e.deviceinfohw(v5.25.0)
+Stremio: com.stremio.one(v1.6.13)
+
+<<< Codecs >>>
+
+OMX.google.aac.decoder: audio/mp4a-latm
+OMX.amlogic.audio.decoder.ac3: audio/ac3
+OMX.google.amrnb.decoder: audio/3gpp
+OMX.google.amrwb.decoder: audio/amr-wb
+OMX.amlogic.audio.decoder.dtshd: audio/dtshd
+OMX.amlogic.audio.decoder.eac3: audio/eac3
+OMX.amlogic.audio.decoder.ffmpeg: audio/ffmpeg
+OMX.google.flac.decoder: audio/flac
+OMX.google.g711.alaw.decoder: audio/g711-alaw
+OMX.google.g711.mlaw.decoder: audio/g711-mlaw
+OMX.google.mp3.decoder: audio/mpeg
+OMX.google.opus.decoder: audio/opus
+OMX.google.raw.decoder: audio/raw
+OMX.google.vorbis.decoder: audio/vorbis
+OMX.google.aac.encoder: audio/mp4a-latm
+OMX.google.amrnb.encoder: audio/3gpp
+OMX.google.amrwb.encoder: audio/amr-wb
+OMX.google.flac.encoder: audio/flac
+OMX.amlogic.vp6a.decoder.sw: video/x-vnd.on2.vp6a
+OMX.amlogic.vp6f.decoder.sw: video/x-vnd.on2.vp6f
+OMX.amlogic.avc.decoder.awesome: video/avc
+OMX.google.h264.decoder: video/avc
+OMX.amlogic.avs.decoder.awesome: video/avs
+OMX.amlogic.avs2.decoder.awesome: video/avs2
+OMX.amlogic.dolby-vision.decoder.awesome: video/dolby-vision
+OMX.amlogic.h263.decoder.awesome: video/3gpp
+OMX.google.h263.decoder: video/3gpp
+OMX.amlogic.hevc.decoder.awesome: video/hevc
+OMX.google.hevc.decoder: video/hevc
+OMX.amlogic.mjpeg.decoder.awesome: video/mjpeg
+OMX.amlogic.mpeg2.decoder.awesome: video/mpeg2
+OMX.amlogic.mpeg4.decoder.awesome: video/mp4v-es
+OMX.google.mpeg4.decoder: video/mp4v-es
+OMX.amlogic.rm10.decoder.sw: video/rm10
+OMX.amlogic.rm20.decoder.sw: video/rm20
+OMX.amlogic.rm30.decoder.sw: video/rm30
+OMX.amlogic.rm40.decoder.sw: video/rm40
+OMX.amlogic.vc1.decoder.awesome: video/vc1
+OMX.amlogic.vp8.decoder.sw: video/x-vnd.on2.vp8
+OMX.google.vp8.decoder: video/x-vnd.on2.vp8
+OMX.amlogic.vp9.decoder.awesome: video/x-vnd.on2.vp9
+OMX.google.vp9.decoder: video/x-vnd.on2.vp9
+OMX.amlogic.wmv3.decoder.awesome: video/wmv3
+OMX.amlogic.wmv1.decoder.sw: video/wmv1
+OMX.amlogic.wmv2.decoder.sw: video/wmv2
+OMX.amlogic.mswmv3.decoder.awesome: video/x-ms-wmv
+OMX.amlogic.wvc1.decoder.awesome: video/wvc1
+OMX.amlogic.video.encoder.avc: video/avc
+OMX.google.h263.encoder: video/3gpp
+OMX.amlogic.video.encoder.hevc: video/hevc
+OMX.google.mpeg4.encoder: video/mp4v-es
+OMX.google.vp8.encoder: video/x-vnd.on2.vp8
+
+<<< Diretórios >>>
+
+Dados: /data
+Pasta Raiz: /system
+Java Home: /system
+Conteúdo Download/Cache: /data/cache
+
+<< Armazenamento Externo >>
+Armazenamento Externo Primário: /storage/emulated/0
+Arquivos Externos #1: /storage/emulated/0/Android/data/com.finalwire.aida64/files
+Arquivos Externos #2: /storage/2850-D04C/Android/data/com.finalwire.aida64/files
+Alarmes: /storage/emulated/0/Alarms
+DCIM: /storage/emulated/0/DCIM
+Downloads: /storage/emulated/0/Download
+Filmes: /storage/emulated/0/Movies
+Músicas: /storage/emulated/0/Music
+Notificaçoes: /storage/emulated/0/Notifications
+Imagens: /storage/emulated/0/Pictures
+Podcasts: /storage/emulated/0/Podcasts
+Toques: /storage/emulated/0/Ringtones
+
+<< Pontos de Montagens >>
+/: Dispositivo: /dev/root
+Sistema de arquivos: ext4
+Somente Leitura
+/dev: Dispositivo: devtmpfs
+Sistema de arquivos: devtmpfs
+Leitura e Gravaçao
+/dev: Dispositivo: tmpfs
+Sistema de arquivos: tmpfs
+Leitura e Gravaçao
+/dev/pts: Dispositivo: devpts
+Sistema de arquivos: devpts
+Leitura e Gravaçao
+/dev/stune: Dispositivo: none
+Sistema de arquivos: cgroup
+Leitura e Gravaçao
+/dev/cpuctl: Dispositivo: none
+Sistema de arquivos: cgroup
+Leitura e Gravaçao
+/dev/cpuset: Dispositivo: none
+Sistema de arquivos: cgroup
+Leitura e Gravaçao
+/dev/cg2_bpf: Dispositivo: cg2_bpf
+Sistema de arquivos: cgroup2
+Leitura e Gravaçao
+/dev/usb-ffs/adb: Dispositivo: adb
+Sistema de arquivos: functionfs
+Leitura e Gravaçao
+/proc: Dispositivo: proc
+Sistema de arquivos: proc
+Leitura e Gravaçao
+/sys: Dispositivo: sysfs
+Sistema de arquivos: sysfs
+Leitura e Gravaçao
+/sys/fs/selinux: Dispositivo: selinuxfs
+Sistema de arquivos: selinuxfs
+Leitura e Gravaçao
+/sys/kernel/debug: Dispositivo: /sys/kernel/debug
+Sistema de arquivos: debugfs
+Leitura e Gravaçao
+/sys/kernel/debug/tracing: Dispositivo: tracefs
+Sistema de arquivos: tracefs
+Leitura e Gravaçao
+/sys/kernel/config: Dispositivo: configfs
+Sistema de arquivos: configfs
+Leitura e Gravaçao
+/sys/fs/bpf: Dispositivo: bpf
+Sistema de arquivos: bpf
+Leitura e Gravaçao
+/sys/fs/pstore: Dispositivo: pstore
+Sistema de arquivos: pstore
+Leitura e Gravaçao
+/mnt: Dispositivo: tmpfs
+Sistema de arquivos: tmpfs
+Leitura e Gravaçao
+/mnt/vendor/param: Dispositivo: /dev/block/param
+Sistema de arquivos: ext4
+Leitura e Gravaçao
+/mnt/vendor/tee: Dispositivo: /dev/block/tee
+Sistema de arquivos: ext4
+Leitura e Gravaçao
+/mnt/runtime/default/emulated: Dispositivo: /data/media
+Sistema de arquivos: sdcardfs
+Leitura e Gravaçao
+/mnt/runtime/read/emulated: Dispositivo: /data/media
+Sistema de arquivos: sdcardfs
+Leitura e Gravaçao
+/mnt/runtime/write/emulated: Dispositivo: /data/media
+Sistema de arquivos: sdcardfs
+Leitura e Gravaçao
+/mnt/media_rw/2850-D04C: Dispositivo: /dev/block/vold/public:179,129
+Sistema de arquivos: vfat
+Leitura e Gravaçao
+/mnt/runtime/default/2850-D04C: Dispositivo: /mnt/media_rw/2850-D04C
+Sistema de arquivos: sdcardfs
+Leitura e Gravaçao
+/mnt/runtime/read/2850-D04C: Dispositivo: /mnt/media_rw/2850-D04C
+Sistema de arquivos: sdcardfs
+Leitura e Gravaçao
+/mnt/runtime/write/2850-D04C: Dispositivo: /mnt/media_rw/2850-D04C
+Sistema de arquivos: sdcardfs
+Leitura e Gravaçao
+/odm: Dispositivo: /dev/block/odm
+Sistema de arquivos: ext4
+Somente Leitura
+/product: Dispositivo: /dev/block/product
+Sistema de arquivos: ext4
+Somente Leitura
+/vendor: Dispositivo: /dev/block/vendor
+Sistema de arquivos: ext4
+Somente Leitura
+/acct: Dispositivo: none
+Sistema de arquivos: cgroup
+Leitura e Gravaçao
+/config: Dispositivo: none
+Sistema de arquivos: configfs
+Leitura e Gravaçao
+/data: Dispositivo: /dev/block/data
+Sistema de arquivos: ext4
+Leitura e Gravaçao
+/cache: Dispositivo: /dev/block/cache
+Sistema de arquivos: ext4
+Leitura e Gravaçao
+/metadata: Dispositivo: /dev/block/metadata
+Sistema de arquivos: ext4
+Leitura e Gravaçao
+/storage: Dispositivo: tmpfs
+Sistema de arquivos: tmpfs
+Leitura e Gravaçao
+/storage/emulated: Dispositivo: /data/media
+Sistema de arquivos: sdcardfs
+Leitura e Gravaçao
+/storage/2850-D04C: Dispositivo: /mnt/media_rw/2850-D04C
+Sistema de arquivos: sdcardfs
+Leitura e Gravaçao
+/storage/self: Dispositivo: tmpfs
+Sistema de arquivos: tmpfs
+Leitura e Gravaçao
+
+<<< Arquivos do Sistema >>>
+
+Buddy Info: /proc/buddyinfo
+Propriedades da Build: /system/build.prop
+Dispositivos Caracteres & Blocos: /proc/devices
+Linha de comando: /proc/cmdline
+Informaçoes da CPU: /proc/cpuinfo
+Propriedades Padrão: /default.prop
+Domínios da Execuçao: /proc/execdomains
+Arquivos do Sistema: /proc/filesystems
+Dispositivos Frame Buffer: /proc/fb
+Hosts: /system/etc/hosts
+Interrupçoes: /proc/interrupts
+Dispositivos de entrada: /proc/bus/input/devices
+Portas de E/S: /proc/ioports
+Versao do Kernel: /proc/version
+Média de Carga: /proc/loadavg
+Arquivos Bloqueados: /proc/locks
+Informaçoes da Memória: /proc/meminfo
+Mapa da Memória: /proc/iomem
+Drivers Diversos: /proc/misc
+Partiçoes: /proc/partitions
+Dispositivos PCI: /proc/bus/pci/devices
+Slab Info: /proc/slabinfo
+Estatísticas: /proc/stat
+Espaço de Swap: /proc/swaps
+
+<<< /proc/cpuinfo >>>
+
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 72.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm aes pmull sha1 sha2 crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 72.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm aes pmull sha1 sha2 crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 72.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm aes pmull sha1 sha2 crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 72.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm aes pmull sha1 sha2 crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Serial		: 280c4000012013000006313737534e50
+Hardware	: Amlogic
+
+
+<<< /proc/meminfo >>>
+
+MemTotal:        2056348 kB
+MemFree:          232912 kB
+MemAvailable:     795260 kB
+Buffers:           28648 kB
+Cached:           662340 kB
+SwapCached:          148 kB
+Active:           785224 kB
+Inactive:         570840 kB
+Active(anon):     415456 kB
+Inactive(anon):   253360 kB
+Active(file):     369768 kB
+Inactive(file):   317480 kB
+Unevictable:        2388 kB
+Mlocked:            2388 kB
+HighTotal:       1310720 kB
+HighFree:          77164 kB
+LowTotal:         745628 kB
+LowFree:          155748 kB
+SwapTotal:        262140 kB
+SwapFree:         249616 kB
+Dirty:               120 kB
+Writeback:             0 kB
+AnonPages:        667388 kB
+Mapped:           532644 kB
+Shmem:              1804 kB
+Slab:              67800 kB
+SReclaimable:      29988 kB
+SUnreclaim:        37812 kB
+KernelStack:       12968 kB
+PageTables:        31216 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     1290312 kB
+Committed_AS:   33542268 kB
+VmallocTotal:     245760 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+CmaTotal:         671744 kB
+CmaFree:           34440 kB
+VmapStack:          6516 kB
+
+<<< Comment >>>
+
+Enter your comment here:
+
