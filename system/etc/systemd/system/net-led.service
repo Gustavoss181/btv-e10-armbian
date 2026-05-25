@@ -1,0 +1,18 @@
+[Unit]
+Description=Configure network status LED
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/sh -c '\
+  echo netdev > /sys/class/leds/btv:status:net/trigger && \
+  echo eth0   > /sys/class/leds/btv:status:net/device_name && \
+  echo 1      > /sys/class/leds/btv:status:net/link'
+ExecStop=/bin/sh -c '\
+  echo none > /sys/class/leds/btv:status:net/trigger && \
+  echo 0    > /sys/class/leds/btv:status:net/brightness'
+
+[Install]
+WantedBy=multi-user.target

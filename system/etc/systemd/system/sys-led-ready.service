@@ -1,0 +1,15 @@
+[Unit]
+Description=Set SYS LED state when system is fully booted
+After=multi-user.target sshd.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+# Define o LED como estático (ligado) quando o boot terminar
+ExecStart=/bin/sh -c 'echo default-on > /sys/class/leds/btv:status:sys/trigger'
+
+# Um truque legal: ao mandar a TV Box reiniciar/desligar, o LED volta pro heartbeat!
+ExecStop=/bin/sh -c 'echo heartbeat > /sys/class/leds/btv:status:sys/trigger'
+
+[Install]
+WantedBy=multi-user.target
