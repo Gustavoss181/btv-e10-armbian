@@ -1,0 +1,46 @@
+Backup iniciado em: sex 01 mai 2026 18:26:29 -03
+[+] Backup: mmcblk0boot0 -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/mmcblk0boot0.img
+    OK: 4194304 bytes
+[+] Backup: mmcblk0boot1 -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/mmcblk0boot1.img
+    OK: 4194304 bytes
+[+] Backup: logo -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/logo.img
+    OK: 8388608 bytes
+[+] Backup: recovery -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/recovery.img
+    OK: 25165824 bytes
+[+] Backup: rsv -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/rsv.img
+    OK: 16777216 bytes
+[+] Backup: tee -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/tee.img
+    OK: 33554432 bytes
+[+] Backup: cri_data -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/cri_data.img
+    OK: 8388608 bytes
+[+] Backup: param -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/param.img
+    OK: 16777216 bytes
+[+] Backup: boot -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/boot.img
+    OK: 16777216 bytes
+[+] Backup: dtbo -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/dtbo.img
+    OK: 8388608 bytes
+[+] Backup: misc -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/misc.img
+    OK: 8388608 bytes
+[+] Backup: metadata -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/metadata.img
+    OK: 16777216 bytes
+[+] Backup: reserved -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/reserved.img
+    OK: 67108864 bytes
+[+] Backup: env -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/env.img
+    OK: 8388608 bytes
+[+] Backup: vbmeta -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/vbmeta.img
+    OK: 2097152 bytes
+[+] Backup: odm -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/odm.img
+    OK: 134217728 bytes
+[+] Backup: product -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/product.img
+    OK: 134217728 bytes
+[+] Backup: vendor -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/vendor.img
+    OK: 402653184 bytes
+[+] Backup: system -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/system.img
+    OK: 1946157056 bytes
+[+] Backup: cache -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/cache.img
+    OK: 1174405120 bytes
+[+] Backup: data -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/data.img
+    OK: 3433037824 bytes
+[+] Backup: mmcblk0_FULL -> /home/gustavo/Backups/btv-e10/btv_e10_backup_20260501_182629/partitions/mmcblk0_FULL.img
+    OK: 7650410496 bytes
+Backup finalizado em: sex 01 mai 2026 19:47:47 -03

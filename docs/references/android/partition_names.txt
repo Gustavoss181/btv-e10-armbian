@@ -1,0 +1,23 @@
+total 0
+drwxr-xr-x 2 root root 440 2014-12-31 21:00 .
+drwxr-xr-x 3 root root 540 2014-12-31 21:00 ..
+lrwxrwxrwx 1 root root  15 2014-12-31 21:00 boot -> /dev/block/boot
+lrwxrwxrwx 1 root root  21 2014-12-31 21:00 bootloader -> /dev/block/bootloader
+lrwxrwxrwx 1 root root  16 2014-12-31 21:00 cache -> /dev/block/cache
+lrwxrwxrwx 1 root root  19 2014-12-31 21:00 cri_data -> /dev/block/cri_data
+lrwxrwxrwx 1 root root  15 2014-12-31 21:00 data -> /dev/block/data
+lrwxrwxrwx 1 root root  15 2014-12-31 21:00 dtbo -> /dev/block/dtbo
+lrwxrwxrwx 1 root root  14 2014-12-31 21:00 env -> /dev/block/env
+lrwxrwxrwx 1 root root  15 2014-12-31 21:00 logo -> /dev/block/logo
+lrwxrwxrwx 1 root root  19 2014-12-31 21:00 metadata -> /dev/block/metadata
+lrwxrwxrwx 1 root root  15 2014-12-31 21:00 misc -> /dev/block/misc
+lrwxrwxrwx 1 root root  14 2014-12-31 21:00 odm -> /dev/block/odm
+lrwxrwxrwx 1 root root  16 2014-12-31 21:00 param -> /dev/block/param
+lrwxrwxrwx 1 root root  18 2014-12-31 21:00 product -> /dev/block/product
+lrwxrwxrwx 1 root root  19 2014-12-31 21:00 recovery -> /dev/block/recovery
+lrwxrwxrwx 1 root root  19 2014-12-31 21:00 reserved -> /dev/block/reserved
+lrwxrwxrwx 1 root root  14 2014-12-31 21:00 rsv -> /dev/block/rsv
+lrwxrwxrwx 1 root root  17 2014-12-31 21:00 system -> /dev/block/system
+lrwxrwxrwx 1 root root  14 2014-12-31 21:00 tee -> /dev/block/tee
+lrwxrwxrwx 1 root root  17 2014-12-31 21:00 vbmeta -> /dev/block/vbmeta
+lrwxrwxrwx 1 root root  17 2014-12-31 21:00 vendor -> /dev/block/vendor
