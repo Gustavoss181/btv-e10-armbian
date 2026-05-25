@@ -2,4 +2,4 @@
 *.dtbo
 *.img
 *.bin
-*.bak
+dtb/*.dtb*
