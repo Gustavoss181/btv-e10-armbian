@@ -2965,16 +2965,6 @@
 				pinctrl-names = "default";
 				uart-has-rtscts;
 				phandle = <0x131>;
-
-				bluetooth {
-					compatible = "brcm,bcm43438-bt";
-					shutdown-gpios = <0x2d 0x52 0x00>;
-					max-speed = <0x1e8480>;
-					clocks = <0x2e>;
-					clock-names = "lpo";
-					vbat-supply = <0x2f>;
-					vddio-supply = <0x21>;
-				};
 			};
 		};
 
