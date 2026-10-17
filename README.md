@@ -47,7 +47,7 @@ Legenda: ✅ funcionando · 🟡 parcial / a validar · ⛔ inviável
 | Ethernet | ✅ | Sempre funcionou (100 Mbps) |
 | HDMI (vídeo) | ✅ | meson-drm OK |
 | **Wi-Fi** | ✅ | GPIOs de power-on/IRQ + clock LPO no DTS; removido `sd-uhs-sdr50` |
-| **LEDs** | ✅ | Nós portados do DTB do Android; controlados por `.service` |
+| **LEDs** | ✅ / 🟡 | SYS e NET controlados; NET considera Ethernet ou Wi-Fi. Sinalização de SSH e cores a validar; ver [docs/leds.md](docs/leds.md) |
 | **Áudio analógico (Lineout)** | ✅ | Codec T9015 + toacodec + dai-link, roteamento FRDDR→TDMOUT_B→T9015→Lineout, mute via GPIOAO_2 |
 | Áudio HDMI | 🟡 | Caminho existe; falta validar em TV com EDID de áudio |
 | Decode de vídeo por HW | 🟡 | `meson-vdec` (V4L2) — alto valor, próximo alvo |
@@ -68,7 +68,8 @@ Tudo concentrado em `dts/meson-g12a-btv-e10.dts` (diffável contra o `sei510` or
 
 1. **Wi-Fi** — habilitação do SDIO com GPIOs de power-on/IRQ, clock LPO, e remoção
    do `sd-uhs-sdr50` que impedia a inicialização.
-2. **LEDs** — nós portados do DTB do Android (mapeamento real de GPIO/cor da placa).
+2. **LEDs** — GPIOs SYS e NET portados do DTB do Android. Cores e demais canais
+   ainda precisam de validação física; o controle atual expõe apenas ligado/desligado.
 3. **Áudio analógico** — codec `T9015`, `toacodec`, `dai-link` e roteamento completo
    até o Lineout, com mute automático via `GPIOAO_2`.
 
@@ -92,9 +93,10 @@ btv-e10-armbian/
 │   ├── meson-g12a-sei510.dts   ← referência p/ diff
 │   └── android_u212_2g.dts     ← DTB do Android decompilado (mapa do hardware)
 ├── system/
-│   └── etc/systemd/system/     ← btv-led-boot.service, btv-led-online.service
+│   ├── etc/systemd/system/     ← net-led.service, sys-led-ready.service
+│   ├── etc/networkd-dispatcher/ ← hooks de atualização do LED NET
+│   └── usr/local/bin/          ← update-net-led.sh
 ├── scripts/
-│   ├── initial_config.sh       ← instalador (DTB, services, holds)
 │   ├── backup_btv_e10.sh
 │   ├── diag.sh
 │   └── extract_dtb.py
@@ -130,9 +132,11 @@ scp dtb/meson-g12a-btv-e10.dtb root@<ip-da-box>:/boot/dtb/amlogic/
 dmesg | grep -iE 'panfrost|wlan|t9015|led|error|fail'
 ```
 
-Os `.service` dos LEDs e os holds de pacote são aplicados pelo
-`scripts/initial_config.sh` (faz `cp`, `systemctl daemon-reload` e
-`systemctl enable --now`).
+Os serviços, o script e os hooks de LEDs em `system/` foram sincronizados com a
+box em 17/10/2026. A lógica atual, os limites da indicação e o procedimento de
+instalação estão em [docs/leds.md](docs/leds.md). O instalador
+`scripts/initial_config.sh`, citado anteriormente, não existe neste repositório.
+Os holds de pacotes são configurados separadamente.
 
 ### Persistência do áudio
 

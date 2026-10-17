@@ -13,8 +13,10 @@ Mudanças permanentes já aplicadas no `meson-g12a-btv-e10.dts` e no sistema:
 - [x] **HDMI (vídeo)** — meson-drm / VPU OK.
 - [x] **Wi-Fi** — SDIO habilitado: GPIOs de power-on/IRQ, clock LPO, remoção do
       `sd-uhs-sdr50`. Interface `wlan0` sobe e conecta.
-- [x] **LEDs** — nós portados do DTB do Android (GPIO/cor reais da placa),
-      controlados pelos serviços `btv-led-boot` e `btv-led-online`.
+- [x] **LEDs SYS e NET** — GPIOs portados do DTB do Android; serviços
+      `sys-led-ready.service` e `net-led.service`. NET considera `eth0` ou `wlan0`,
+      com atualização por `networkd-dispatcher`. Arquivos sincronizados da box
+      em 17/10/2026; cores e indicação de SSH ainda a validar.
 - [x] **Áudio analógico (Lineout)** — codec `T9015` + `toacodec` + `dai-link`,
       roteamento `FRDDR → TDMOUT_B → T9015 → Lineout`, mute automático via `GPIOAO_2`.
 - [x] **Remoção do nó `bluetooth` fantasma** — hardware inexistente nesta placa.
@@ -25,6 +27,20 @@ Mudanças permanentes já aplicadas no `meson-g12a-btv-e10.dts` e no sistema:
 ---
 
 ## 🟡 Em estudo / a testar e ajustar
+
+### Prioridade para operação sem monitor: LEDs de diagnóstico
+
+- [x] Trazer para o Git os serviços, script e hooks instalados na box.
+- [ ] Mapear fisicamente SYS, NET, IR e os possíveis canais de cor.
+- [ ] Implementar indicação de busca/reconexão e de disponibilidade do SSH,
+      com estabilidade antes de acender fixo e reação à perda de acesso.
+- [ ] Corrigir a restauração de estado do Armbian, que rejeita campos vazios
+      em `/etc/armbian-leds.conf`, e definir quem controla cada LED no boot.
+- [ ] Testar boot, perda/retorno de rede e falha/retorno do SSH.
+
+Evidências, proposta de padrões e limites: [docs/leds.md](docs/leds.md).
+
+### Objetivos anteriores de media center
 
 Do mais viável/maior retorno ao mais incerto. Ordem sugerida para uso como
 **media center**: decode de vídeo → IR → CEC → Panfrost.

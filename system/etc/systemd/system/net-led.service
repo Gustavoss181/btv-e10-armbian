@@ -1,18 +1,15 @@
 [Unit]
-Description=Configure network status LED
-After=network-online.target
-Wants=network-online.target
+Description=Network status LED (eth0 OR wlan0) - initial state
+After=network.target systemd-networkd.service
 
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=/bin/sh -c '\
-  echo netdev > /sys/class/leds/btv:status:net/trigger && \
-  echo eth0   > /sys/class/leds/btv:status:net/device_name && \
-  echo 1      > /sys/class/leds/btv:status:net/link'
-ExecStop=/bin/sh -c '\
-  echo none > /sys/class/leds/btv:status:net/trigger && \
-  echo 0    > /sys/class/leds/btv:status:net/brightness'
+# Remove o trigger netdev antigo, volta pra controle manual
+ExecStartPre=/bin/sh -c 'echo none > /sys/class/leds/btv:status:net/trigger'
+# Estado inicial no boot
+ExecStart=/usr/local/bin/update-net-led.sh
+ExecStop=/bin/sh -c 'echo 0 > /sys/class/leds/btv:status:net/brightness'
 
 [Install]
 WantedBy=multi-user.target

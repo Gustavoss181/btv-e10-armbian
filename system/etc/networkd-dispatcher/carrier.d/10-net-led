@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/local/bin/update-net-led.sh
